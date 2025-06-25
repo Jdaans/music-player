@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music Player | devChallenges.io</title>
+
+  </head>
+  <body>
+
+    <div class="container">
+       <div class="player">
+          <div class="player__cover">
+            <img id="artistImg"  class="artist-image" src="" alt="Album Cover" />
+          </div>
+          <div class="player__info">
+            <h1 id="title" class="player__title"></h1>
+            <h2 id="artist" class="player__artist"></h2>
+          </div>
+          
+
+          <div class="player__controls">
+            <div class="progress-container"      id="progressContainer">
+              <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-info">
+              <span id="currentTime">0.00</span>
+              <span id="duration">0.00</span>
+            </div>
+
+            <div class="buttons-container">
+              <button id="previousBtn" class="player__button player__button--previous">
+                <img src="skip_previous_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
+              </button>
+              <button id="playBtn" class="player__button player__button--play">
+                <img src="play_pause_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">   
+              </button>
+              <button id="nextBtn" class="player__button player__button--next">
+                <img src="skip_next_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
+              </button>
+            </div>
+          </div>
+
+          <audio id="audioPlayer"></audio>
+      </div>
+  
+    <script src="main.js"></script>
+  </body>
+</html>
